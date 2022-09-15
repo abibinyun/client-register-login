@@ -46,7 +46,7 @@ const login = (email, password, navigate) => async (dispatch) => {
 
       const getDetailUser = await ServerApi({
         method: "GET",
-        url: "http://localhost:3000/register/me",
+        url: "/register/me",
         headers: {
           Authorization: "Bearer " + token,
         },
